@@ -1,0 +1,45 @@
+{
+    "name": "b44x/firmao-php",
+    "description": "PHP client for Firmao API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "B4x\\FirmaoApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michell `b4x` Hoduń",
+            "email": "mhodun@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "guzzlehttp/guzzle": "^7.8",
+        "monolog/monolog": "^3.7",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0",
+        "psr/log": "^3.0",
+        "ramsey/uuid": "^4.7",
+        "symfony/property-access": "^7.0",
+        "symfony/serializer": "^7.0",
+        "symfony/validator": "^7.0",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "phpstan/phpstan": "^1.10",
+        "friendsofphp/php-cs-fixer": "^3.40",
+        "symfony/var-dumper": "^7.0"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs-fix": "php-cs-fixer fix",
+        "analyse": "phpstan analyse src tests"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
